@@ -1,4 +1,4 @@
-name: Add Default Label to PR
+name: Add patch Label to PR
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ jobs:
   add-label:
     runs-on: ubuntu-latest
     steps:
-      - name: Add Default Label
+      - name: Add patch Label
         uses: actions/github-script@v4
         with:
           github-token: ${{ secrets.pwd }}
@@ -25,6 +25,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: context.payload.pull_request.number,
-                labels: ['default-label']
+                labels: ['patch']
               });
             }
