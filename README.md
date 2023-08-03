@@ -20,4 +20,4 @@ testing webhooksssss yzzzzzz
 
 clear
 
-trigger webhhook
+trigger webhhook pipeline
