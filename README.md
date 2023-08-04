@@ -31,3 +31,5 @@ pipeline test05
 
 
 06 test pipeline
+
+intergation
