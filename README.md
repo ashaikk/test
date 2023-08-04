@@ -11,7 +11,7 @@ checking label
 lated to versio
 
 
-removed protection rules yes
+removed\
 
 testing the token
 
