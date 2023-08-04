@@ -16,7 +16,7 @@ node {
     def scmVars
     def customImage
     def to_list
-    sh ''' echo $DIT_PASS && pwd && hostname '''
+    sh ''' echo $DIT_PASS && pwd && hostname && id '''
     try {
         stage('Checkout SCM') {
             scmVars = checkout([$class: 'GitSCM', branches: [[name: "${GIT_BRANCH}"]],
