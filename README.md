@@ -30,4 +30,4 @@ pipeline test 04
 pipeline test05
 
 
-06 test
+06 test pipeline
