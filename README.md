@@ -8,8 +8,7 @@ created feature branch to add the version updates
 added package.json
 checking label
 
-
-changes related to versio
+lated to versio
 
 
 removed protection rules yes
