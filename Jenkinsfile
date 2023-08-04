@@ -16,7 +16,7 @@ node {
     def scmVars
     def customImage
     def to_list
-    sh ''' echo $DIT_PASS && pwd && hostname && id && git clone -b feature/gihubactions https://github.com/ashaikk/test.git'''
+   
     try {
         stage('Checkout SCM') {
             scmVars = checkout([$class: 'GitSCM', branches: [[name: "${GIT_BRANCH}"]],
@@ -31,7 +31,7 @@ node {
             if(currentBuild.result == 'FAILURE'){
                     to_list = 'asha.shaik@blinqnetworks.com'
                 }
-    sh ''' echo $DIT_PASS && pwd && hostname '''
+  
             
             commits = getCommitDetails()
             for (item in commits)
