@@ -28,3 +28,6 @@ triggering pipeline 1233
 pipeline test 04
 
 pipeline test05
+
+
+06 test
