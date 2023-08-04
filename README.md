@@ -12,7 +12,7 @@ checking label
 changes related to version
 
 
-removed protection rules
+removed protection rules yes
 
 testing the token
 
