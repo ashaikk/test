@@ -21,7 +21,7 @@ node {
         stage('Checkout SCM') {
             scmVars = checkout([$class: 'GitSCM', branches: [[name: "${GIT_BRANCH}"]],
             	doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], 
-            	userRemoteConfigs: [[credentialsId: 'asha personal creds', url: 'https://github.com/ashaikk/test.git']]])
+            	userRemoteConfigs: [[credentialsId: 'ashashaik', url: 'https://github.com/ashaikk/test.git']]])
         }
         currentBuild.result = 'SUCCESS'
     } catch (error) {
