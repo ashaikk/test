@@ -31,5 +31,4 @@ pipeline test05
 
 
 06 test pipeline
-
-intergation add tokern now apps
+debug on add tokern now apps
