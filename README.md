@@ -30,3 +30,5 @@ pipeline test05
 
 06 test pipeline
 debug on add tokern now apps
+
+tetsing push event
