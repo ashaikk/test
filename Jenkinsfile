@@ -19,7 +19,7 @@ node {
    
     try {
         stage('Checkout SCM') {
-            scmVars = checkout([$class: 'GitSCM', branches: [[name: "${GIT_BRANCH}"]],
+            scmVars = checkout([$class: 'GitSCM',
             	doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], 
             	userRemoteConfigs: [[credentialsId: 'ashashaik', url: 'https://github.com/ashaikk/test.git']]])
         }
