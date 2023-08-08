@@ -1,0 +1,30 @@
+name: Add patch Label to PR
+
+on:
+  pull_request:
+    types:
+      - opened
+
+jobs:
+  add-label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add patch Label
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.pwd }}
+          script: |
+            const { data: pr } = await github.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+
+            if (pr.labels.length === 0) {
+              await github.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.payload.pull_request.number,
+                labels: ['patch']
+              });
+            }
